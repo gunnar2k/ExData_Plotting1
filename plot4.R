@@ -51,14 +51,14 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=
 
 plot(
   data$Date,
-  data$Global_active_power,
+  data$Global_reactive_power,
   main="",
   col=c("black"),
   xlab="datetime",
-  ylab="Global_active_power",
+  ylab="Global_reactive_power",
   cex=0
 )
-lines(data$Date, data$Global_active_power)
+lines(data$Date, data$Global_reactive_power)
 
 # Output to correct format
 dev.copy(png, height=480, width=480, filename="plot4.png")
